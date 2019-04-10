@@ -8,9 +8,9 @@ import './index.sass';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Home},
-  { path: '/gtntric', component: Gtntric },
-  { path: '/elements', component: Elements }
+  // { path: '/', component: Home},
+  // { path: '/gtntric', component: Gtntric },
+  // { path: '/elements', component: Elements }
 ];
 
 const router = new VueRouter({
