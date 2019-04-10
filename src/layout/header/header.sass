@@ -1,0 +1,85 @@
+.header
+  display: block
+  border-bottom: 6px solid #f3ebdc
+  height: 108px
+  //padding: 37px 0 24px
+
+.header__content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+  padding: 0 54px 0 106px
+
+.header__logo
+  margin-right: px-to-vw(218, 1920)
+  text-align: center
+
+.header__logo:hover
+
+  .header__title
+    color: #AAAAAA
+
+  .header__subtitle
+    color: #AAAAAA
+
+.header__title
+  color: #171717
+  font-family: $font-family-base-extra-bold
+  font-size: px-to-vw(28, 1920)
+  text-transform: uppercase
+  line-height: px-to-vw(26, 1920)
+  letter-spacing: 1px
+  transition: color 0.3s
+
+.header__title:hover
+  color: #AAAAAA
+
+.header__subtitle
+  color: #171717
+  font-size: px-to-vw(12, 1920)
+  line-height: px-to-vw(15.5, 1920)
+  text-transform: uppercase
+
+.header__list,
+.header__content-left,
+.header__icons
+  display: flex
+
+.header__link
+  color: #171717
+  //font-family: $font-family-base-light
+  //font-size: px-to-vw(12, 1920)
+  font-size: 12px
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  transition: color 0.3s
+
+.header__link:hover
+  color: #AAAAAA
+
+.header__icon
+  display: block
+  width: 18px
+  height: 18px
+  margin-right: 25px
+
+.header__icon:last-child
+  margin-right: 0
+
+.header__list
+  align-items: center
+  height: 100%
+
+.header__item
+  margin-right: px-to-vw(101, 1920)
+
+.header__item:last-child
+  margin-right: 0
+
+.header__icons svg
+  transition: fill 0.3s
+
+  &:hover
+    fill: #AAAAAA
