@@ -1,8 +1,5 @@
 import Vue from 'vue';
 import AppVue from './App.vue';
-import Home from './Home';
-import Gtntric from './Gtntric';
-import Elements from './Elements';
 import VueRouter from 'vue-router';
 
 import './index.pug';

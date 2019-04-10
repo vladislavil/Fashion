@@ -2,26 +2,25 @@
 
   .main__content
     transition(name="appear" mode="out-in")
-      //keep-alive
-      router-view
+      //router-view
 
 </template>
 
-<style lang="sass" scoped>
+<!--<style lang="sass" scoped>-->
 
-  .appear-enter
-    opacity: 0
-    transform: translateX(-30%)
+  <!--.appear-enter-->
+    <!--opacity: 0-->
+    <!--transform: translateX(-30%)-->
 
-  .appear-enter-active
-    transition: opacity 1s, transform 1s
+  <!--.appear-enter-active-->
+    <!--transition: opacity 1s, transform 1s-->
 
-  .appear-leave-to
-    opacity: 0
-    transform: translateX(-30%)
+  <!--.appear-leave-to-->
+    <!--opacity: 0-->
+    <!--transform: translateX(-30%)-->
 
-  .appear-leave-active
-    transition: opacity 1s, transform 1s
+  <!--.appear-leave-active-->
+    <!--transition: opacity 1s, transform 1s-->
 
-</style>
+<!--</style>-->
 
