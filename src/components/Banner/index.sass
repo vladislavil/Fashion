@@ -1,0 +1,123 @@
+.banner__slide
+  position: relative
+
+.banner__wrapper
+  position: absolute
+  top: 0
+  right: 0
+  width: 50%
+  height: 100%
+
+.banner__content
+  position: relative
+
+.banner__img
+  margin-bottom: -6px
+  width: 100%
+  height: auto
+
+.agile__arrow.agile__arrow--prev,
+.agile__arrow.agile__arrow--next
+  display: flex
+  flex-direction: column
+  font-size: 12px
+  font-weight: $font-weight-semi-bold
+  border: none
+  outline: none
+  background-color: transparent
+  cursor: pointer
+
+.agile__arrow.agile__arrow--prev svg
+  fill: rgba(255, 255, 255, 1)
+
+.agile__arrow.agile__arrow--next svg
+  fill: rgba(23, 23 , 23, 1)
+
+.agile__arrow.agile__arrow--prev
+  position: absolute
+  top: px-to-vw(190, 1920)
+  right: px-to-vw(302, 1920)
+  color: #ffffff
+
+  &:hover
+    color: rgba(23 , 23 , 23 ,1)
+    svg
+      fill: rgba(23 , 23 , 23 ,1)
+
+.agile__arrow.agile__arrow--next
+  position: absolute
+  top: px-to-vw(234, 1920)
+  right: px-to-vw(302, 1920)
+
+  &:hover
+    color: rgba(255, 255, 255, 1)
+    svg
+      fill: rgba(255, 255, 255, 1)
+
+.banner__wrapper
+  padding-top: px-to-vw(186, 1920)
+
+.banner__title
+  margin-bottom: 28px
+  margin-left: -0.1em
+  font-family: $font-family-base-extra-bold
+  font-size: px-to-vw(117, 1920)
+  font-weight: $font-weight-semi-bold
+  line-height: px-to-vw(108, 1920)
+  text-transform: uppercase
+
+.banner__subtitle
+  margin-bottom: 31px
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: $font-weight-semi-bold
+  letter-spacing: 1px
+
+.banner__icons
+  margin-bottom: 45px
+  display: flex
+
+.banner__icon
+  margin-right: 17px
+
+.banner__icon:last-child
+  margin-right: 0
+
+.banner__link
+  display: block
+  width: 37px
+  height: 37px
+
+.banner__link svg
+  transition: fill 0.3s
+
+.banner__link
+  &:hover
+    svg
+      fill: #AAAAAA
+
+.banner__text
+  width: px-to-vw(286, 1920)
+  margin-bottom: 33px
+  font-size: 14px
+  line-height: 26px
+
+.banner__button
+  display: block
+  border: 1px solid transparent
+  border-radius: 25px
+  width: 114px
+  padding: 13px 0
+  background-color: #000000
+  color: #ffffff
+  font-size: 9px
+  font-weight: $font-weight-semi-bold
+  text-transform: uppercase
+  text-align: center
+  cursor: pointer
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s
+
+.banner__button:hover
+  background-color: #ffffff
+  border-color: #000000
+  color: #000000

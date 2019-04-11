@@ -1,27 +1,24 @@
 <template lang="pug">
 
   .main__content
-    transition(name="appear" mode="out-in")
+    <!--transition(name="appear" mode="out-in")-->
       //router-view
-      socials(:socials = "socials")
+    banner
+      socials
 
 </template>
 
 <script>
   import Socials from '../components/Socials/Socials'
+  import Banner from '../components/Banner/Banner'
 
   export default {
     components: {
-      Socials
+      Socials,
+      Banner
     },
     data() {
       return{
-        socials: [
-          '/images/share/facebook.svg',
-          '/images/share/google.svg',
-          '/images/share/inst.svg',
-          '/images/share/twitter.svg'
-        ]
       }
     }
   }
