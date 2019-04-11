@@ -1,10 +1,9 @@
 <template lang="pug">
 
   .main__content
-    <!--transition(name="appear" mode="out-in")-->
-      //router-view
-    banner
-      socials
+    section.banner
+      banner
+        socials
 
 </template>
 
@@ -42,4 +41,3 @@
     <!--transition: opacity 1s, transform 1s-->
 
 <!--</style>-->
-

@@ -1,11 +1,11 @@
-.banner__slide
+.banner__slider
   position: relative
 
 .banner__wrapper
   position: absolute
   top: 0
   right: 0
-  width: 50%
+  width: calc(50% + 5px)
   height: 100%
 
 .banner__content
@@ -16,65 +16,27 @@
   width: 100%
   height: auto
 
-.agile__arrow.agile__arrow--prev,
-.agile__arrow.agile__arrow--next
-  display: flex
-  flex-direction: column
-  font-size: 12px
-  font-weight: $font-weight-semi-bold
-  border: none
-  outline: none
-  background-color: transparent
-  cursor: pointer
-
-.agile__arrow.agile__arrow--prev svg
-  fill: rgba(255, 255, 255, 1)
-
-.agile__arrow.agile__arrow--next svg
-  fill: rgba(23, 23 , 23, 1)
-
-.agile__arrow.agile__arrow--prev
-  position: absolute
-  top: px-to-vw(190, 1920)
-  right: px-to-vw(302, 1920)
-  color: #ffffff
-
-  &:hover
-    color: rgba(23 , 23 , 23 ,1)
-    svg
-      fill: rgba(23 , 23 , 23 ,1)
-
-.agile__arrow.agile__arrow--next
-  position: absolute
-  top: px-to-vw(234, 1920)
-  right: px-to-vw(302, 1920)
-
-  &:hover
-    color: rgba(255, 255, 255, 1)
-    svg
-      fill: rgba(255, 255, 255, 1)
-
 .banner__wrapper
   padding-top: px-to-vw(186, 1920)
 
 .banner__title
-  margin-bottom: 28px
+  margin-bottom: px-to-vw(28, 1920)
   margin-left: -0.1em
   font-family: $font-family-base-extra-bold
   font-size: px-to-vw(117, 1920)
   font-weight: $font-weight-semi-bold
-  line-height: px-to-vw(108, 1920)
+  line-height: (108/117)
   text-transform: uppercase
 
 .banner__subtitle
-  margin-bottom: 31px
-  font-size: 14px
+  margin-bottom: px-to-vw(31, 1920)
+  font-size: px-to-vw(14, 1920)
   text-transform: uppercase
   font-weight: $font-weight-semi-bold
   letter-spacing: 1px
 
 .banner__icons
-  margin-bottom: 45px
+  margin-bottom: px-to-vw(45, 1920)
   display: flex
 
 .banner__icon
@@ -98,16 +60,16 @@
 
 .banner__text
   width: px-to-vw(286, 1920)
-  margin-bottom: 33px
-  font-size: 14px
-  line-height: 26px
+  margin-bottom: px-to-vw(39, 1920)
+  font-size: px-to-vw(14, 1920)
+  line-height: (26/14)
 
 .banner__button
   display: block
   border: 1px solid transparent
   border-radius: 25px
   width: 114px
-  padding: 13px 0
+  padding: 11px 0
   background-color: #000000
   color: #ffffff
   font-size: 9px
@@ -121,3 +83,49 @@
   background-color: #ffffff
   border-color: #000000
   color: #000000
+
+.swiper-button-prev,
+.swiper-button-next
+  position: absolute
+  background-image: none
+  border: none
+  outline: none
+  width: 45px
+  height: 23px
+  font-size: 12px
+  font-weight: $font-weight-semi-bold
+  text-transform: uppercase
+  line-height: 1
+  letter-spacing: 1px
+  transition: color 0.3s
+
+.swiper-button-prev svg
+  fill: #ffffff
+  transition: fill 0.3s
+
+.swiper-button-next svg
+  fill: #171717
+  transition: fill 0.3s
+
+.swiper-button-prev
+  left: auto
+  top: px-to-vw(213, 1920)
+  right: px-to-vw(302, 1920)
+  color: #ffffff
+
+.swiper-button-next
+  color: #171717
+  top: px-to-vw(255, 1920)
+  right: px-to-vw(302, 1920)
+
+.swiper-button-prev:hover
+  color: #171717
+
+  svg
+    fill: #171717
+
+.swiper-button-next:hover
+  color: #ffffff
+
+  svg
+    fill: #ffffff
