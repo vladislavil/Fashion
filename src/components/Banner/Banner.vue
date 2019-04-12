@@ -17,8 +17,12 @@
                 li.banner__icon
                   a(href="#" onclick="return false").banner__link
                     include heart.svg
+                li.banner__icon
+                  a(href="#" onclick="return false").banner__link
+                    include share.svg
               .banner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum nibh, vel aliquet massa. Etiam in magna id risus lacinia luctus eget eu est.
               a.banner__button shop now
+              slot(name="oficial-offer")
         swiper-slide
           .banner__slide
             .banner__img-wrapper
@@ -33,6 +37,9 @@
                 li.banner__icon
                   a(href="#" onclick="return false").banner__link
                     include heart.svg
+                li.banner__icon
+                  a(href="#" onclick="return false").banner__link
+                    include share.svg
               .banner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum nibh, vel aliquet massa. Etiam in magna id risus lacinia luctus eget eu est.
               a.banner__button shop now
         swiper-slide
@@ -49,6 +56,9 @@
                 li.banner__icon
                   a(href="#" onclick="return false").banner__link
                     include heart.svg
+                li.banner__icon
+                  a(href="#" onclick="return false").banner__link
+                    include share.svg
               .banner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum nibh, vel aliquet massa. Etiam in magna id risus lacinia luctus eget eu est.
               a.banner__button shop now
         .swiper-button-prev(slot='button-prev')
@@ -57,7 +67,7 @@
         .swiper-button-next(slot='button-next')
           | next
           include next.svg
-    slot
+    slot(name="socials")
 
 </template>
 
@@ -72,13 +82,15 @@
     data() {
       return {
         swiperOption: {
+          speed: 1000,
+          roundLengths: true,
+          iOSEdgeSwipeThreshold: false,
+          //effect: "flip",
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
           },
           loop: true,
-          // onlyExternal: true,
-          // simulateTouch: false
           allowTouchMove: false
         },
       }

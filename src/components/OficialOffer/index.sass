@@ -1,0 +1,115 @@
+.oficial-offer
+  position: absolute
+  bottom: 0
+  right: 0
+  z-index: 100
+  width: 66.85%
+  height: px-to-vw(480, 1920)
+
+.oficial-offer__content
+  display: flex
+  height: 100%
+
+.oficial-offer__left-content
+  width: 35.6%
+  background-image: url("oficial-offer.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+
+.oficial-offer__right-content
+  width: calc(100% - 35.6%)
+  padding: px-to-vw(45, 1920) px-to-vw(40, 1920) 0
+  background-image: url("special-offer-bg.png")
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+
+.oficial-offer__title
+  margin-bottom: 8px
+  color: #ffffff
+  font-family: $font-family-base-extra-bold
+  font-size: px-to-vw(38, 1920)
+  line-height: (46/38)
+  text-transform: uppercase
+
+.oficial-offer__subtitle
+  margin-bottom: px-to-vw(22, 1920)
+  color: #ffffff
+  font-size: px-to-vw(21, 1920)
+
+.oficial-offer__old-price
+  margin-right: 20px
+  color: #ffffff
+  font-size: px-to-vw(22, 1920)
+  text-decoration: line-through
+
+.oficial-offer__new-price
+  color: #ffffff
+  font-size: px-to-vw(38, 1920)
+  font-weight: $font-weight-semi-bold
+
+.oficial-offer__prices
+  display: flex
+  align-items: center
+
+.oficial-offer__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-left: 8px
+  padding-right: 19px
+  margin-bottom: px-to-vw(56, 1920)
+
+.oficial-offer__button
+  display: block
+  width: 40.5%
+  padding: px-to-vw(14, 1920) 0
+  border-radius: px-to-vw(25, 1920)
+  color: #000000
+  background-color: #f3ebdc
+  font-size: px-to-vw(11, 1920)
+  text-transform: uppercase
+  font-weight: $font-weight-semi-bold
+  text-align: center
+  transition: opacity 0.3s
+
+.oficial-offer__button:hover
+  opacity: .5
+
+.oficial-offer__timer
+  display: flex
+  justify-content: space-between
+  padding-right: 23px
+
+.oficial-offer__part
+  width: px-to-vw(90, 1920)
+  height: px-to-vw(105, 1920)
+  background-color: #ffffff
+  border-radius: 23px
+  padding: 4px 0 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.oficial-offer__time
+  font-family: $font-family-base-extra-bold
+  font-size: px-to-vw(38, 1920)
+  line-height: 0.8
+  font-weight: $font-weight-extra-bold
+  text-align: center
+
+.oficial-offer__pagination
+  font-size: px-to-vw(15, 1920)
+  text-align: center
+  letter-spacing: 2px
+
+.oficial-offer__text
+  font-size: px-to-vw(11, 1920)
+  font-weight: $font-weight-semi-bold
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: 1px
+
+

@@ -3,18 +3,22 @@
   .main__content
     section.banner
       banner
-        socials
-
+        template(slot="socials")
+          socials
+        template(slot="oficial-offer")
+          oficial-offer
 </template>
 
 <script>
   import Socials from '../components/Socials/Socials'
+  import OficialOffer from '../components/OficialOffer/OficialOffer'
   import Banner from '../components/Banner/Banner'
 
   export default {
     components: {
       Socials,
-      Banner
+      Banner,
+      OficialOffer,
     },
     data() {
       return{
