@@ -1,10 +1,9 @@
 .banner__slide
-  margin-right: -6px
+  height: px-to-vw(995, 1920)
+  margin-right: -7px
 
 .banner__wrapper
-  position: absolute
-  top: 0
-  right: 0
+  position: relative
   width: calc(50% + 5px)
   height: 100%
 
@@ -12,9 +11,14 @@
   position: relative
 
 .banner__img
+  display: flex
+  justify-content: flex-end
   margin-bottom: -15px
   width: 100%
-  height: auto
+  height: 100%
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
 
 .banner__wrapper
   padding-top: px-to-vw(186, 1920)

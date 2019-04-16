@@ -2,7 +2,7 @@
   .oficial-offer
     .oficial-offer__content
       .oficial-offer__left-content( :style="{backgroundImage: 'url('+ '../images/oficial-offer.png' +')'}")
-      .oficial-offer__right-content
+      .oficial-offer__right-content( :style="{backgroundImage: 'url('+ '../images/special-offer-bg.png' +')'}" )
         .oficial-offer__title Special Offer Of The Month
         .oficial-offer__subtitle Black long sleeve
         .oficial-offer__wrapper
