@@ -9,23 +9,38 @@
           oficial-offer
     section.product-type
       product-types
+    section.offer-banners
+      offer-banners( :items = "items" :flag = "0")
+    section.offer-banners
+      offer-banners( :items = "items" :flag = "1")
+    section.blog
+      blog
+
 </template>
 
 <script>
   import Socials from '../components/Socials/Socials'
   import OficialOffer from '../components/OficialOffer/OficialOffer'
   import Banner from '../components/Banner/Banner'
-  import productTypes from '../components/productTypes/productTypes'
+  import ProductTypes from '../components/ProductTypes/ProductTypes'
+  import OfferBanners from '../components/OfferBanners/OfferBanners'
+  import Blog from '../components/Blogs/Blogs'
 
   export default {
     components: {
       Socials,
       Banner,
       OficialOffer,
-      productTypes
+      ProductTypes,
+      OfferBanners,
+      Blog
     },
     data() {
       return{
+        items: [
+          {title: "WE OFFER BRAND NEW STYLES", subtitle: "SIGN UP NOW AND GET 50% OFF", img: "../images/banner-img.png", text: "see full collection"},
+          {title: "subscribe to our newsletter ", subtitle: "SIGN UP NOW AND GET 75% OFF", img: "../images/banner-img1.jpg", text: "sing up now"}
+        ],
       }
     }
   }

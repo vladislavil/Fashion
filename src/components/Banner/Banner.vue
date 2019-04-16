@@ -80,14 +80,14 @@
       return {
         swiperOption: {
           speed: 1000,
-          //autoplay: true,
-          //effect: "fade",
+          autoplay: true,
+          effect: "fade",
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
           },
           loop: true,
-          //allowTouchMove: false
+          allowTouchMove: false
         },
       }
     },
