@@ -1,6 +1,3 @@
-.banner__slider
-  position: relative
-
 .banner__slide
   margin-right: -6px
 
@@ -87,48 +84,50 @@
   border-color: #000000
   color: #000000
 
-.swiper-button-prev,
-.swiper-button-next
-  position: absolute
-  background-image: none
-  border: none
-  outline: none
-  width: 45px
-  height: 23px
-  font-size: 12px
-  font-weight: $font-weight-semi-bold
-  text-transform: uppercase
-  line-height: 1
-  letter-spacing: 1px
-  transition: color 0.3s
+.banner__content
 
-.swiper-button-prev svg
-  fill: #ffffff
-  transition: fill 0.3s
+  .swiper-button-prev,
+  .swiper-button-next
+    position: absolute
+    background-image: none
+    border: none
+    outline: none
+    width: 45px
+    height: 23px
+    font-size: 12px
+    font-weight: $font-weight-semi-bold
+    text-transform: uppercase
+    line-height: 1
+    letter-spacing: 1px
+    transition: color 0.3s
 
-.swiper-button-next svg
-  fill: #171717
-  transition: fill 0.3s
-
-.swiper-button-prev
-  left: auto
-  top: px-to-vw(213, 1920)
-  right: px-to-vw(302, 1920)
-  color: #ffffff
-
-.swiper-button-next
-  color: #171717
-  top: px-to-vw(255, 1920)
-  right: px-to-vw(302, 1920)
-
-.swiper-button-prev:hover
-  color: #171717
-
-  svg
-    fill: #171717
-
-.swiper-button-next:hover
-  color: #ffffff
-
-  svg
+  .swiper-button-prev svg
     fill: #ffffff
+    transition: fill 0.3s
+
+  .swiper-button-next svg
+    fill: #171717
+    transition: fill 0.3s
+
+  .swiper-button-prev
+    left: auto
+    top: px-to-vw(213, 1920)
+    right: px-to-vw(302, 1920)
+    color: #ffffff
+
+  .swiper-button-next
+    color: #171717
+    top: px-to-vw(255, 1920)
+    right: px-to-vw(302, 1920)
+
+  .swiper-button-prev:hover
+    color: #171717
+
+    svg
+      fill: #171717
+
+  .swiper-button-next:hover
+    color: #ffffff
+
+    svg
+      fill: #ffffff

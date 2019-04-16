@@ -1,7 +1,7 @@
 <template lang="pug">
   .oficial-offer
     .oficial-offer__content
-      .oficial-offer__left-content
+      .oficial-offer__left-content( :style="{backgroundImage: 'url('+ '../images/oficial-offer.png' +')'}")
       .oficial-offer__right-content
         .oficial-offer__title Special Offer Of The Month
         .oficial-offer__subtitle Black long sleeve

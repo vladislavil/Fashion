@@ -7,18 +7,22 @@
           socials
         template(slot="oficial-offer")
           oficial-offer
+    section.product-type
+      product-types
 </template>
 
 <script>
   import Socials from '../components/Socials/Socials'
   import OficialOffer from '../components/OficialOffer/OficialOffer'
   import Banner from '../components/Banner/Banner'
+  import productTypes from '../components/productTypes/productTypes'
 
   export default {
     components: {
       Socials,
       Banner,
       OficialOffer,
+      productTypes
     },
     data() {
       return{

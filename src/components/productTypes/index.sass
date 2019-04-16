@@ -1,0 +1,89 @@
+.product-types
+
+.product-types__swiper
+  position: unset
+
+.product-types__title
+  font-size: px-to-vw(26, 1920)
+  font-weight: $font-weight-semi-bold
+  text-transform: uppercase
+  text-align: center
+
+.product-types__subtitle
+  font-size: px-to-vw(14, 1920)
+  text-align: center
+  letter-spacing: 2px
+
+.product-types__slider
+  position: relative
+  width: 60.9375%
+  margin: 0 auto
+
+.product-types__wrapper
+  position: relative
+  margin: 0 13px
+  flex-basis: 100%
+  height: px-to-vw(480, 1920)
+
+.product-types__img
+  width: 100%
+  height: 100%
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+
+.product-types__content
+  .swiper-button-next,
+  .swiper-button-prev
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 110px
+    height: 43px
+    background-image: unset
+    background-color: #d7d7d7
+    outline: none
+    border: none
+    font-size: px-to-vw(14, 1920)
+    text-transform: uppercase
+    letter-spacing: 2px
+    transform: rotate(270deg)
+    transition: background-color 0.3s
+
+  .swiper-button-next
+    right: px-to-vw(-168, 1920)
+
+  .swiper-button-prev
+    left: px-to-vw(-168, 1920)
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover
+    background-color: #afafaf
+
+.product-types__button
+  position: absolute
+  bottom: px-to-vw(45, 1920)
+  left: 50%
+  margin-left: -25%
+  display: block
+  width: 48%
+  padding: px-to-vw(20, 1920) 0
+  background-color: #000000
+  color: #ffffff
+  font-size: px-to-vw(13, 1920)
+  font-weight: $font-weight-semi-bold
+  text-align: center
+  text-transform: uppercase
+  letter-spacing: 2px
+  border: 1px solid transparent
+  border-radius: px-to-vw(28, 1920)
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s
+
+.product-types__button:hover
+  color: #000000
+  background-color: #ffffff
+  border-color: #000000
+
+
+
+

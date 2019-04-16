@@ -83,9 +83,8 @@
       return {
         swiperOption: {
           speed: 1000,
-          roundLengths: true,
-          iOSEdgeSwipeThreshold: false,
-          //effect: "flip",
+          autoplay: true,
+          effect: "fade",
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
