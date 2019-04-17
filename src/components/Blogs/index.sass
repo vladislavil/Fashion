@@ -1,6 +1,46 @@
 .blog__content
   position: relative
+  display: block
   height: px-to-vw(380, 1920)
+
+.blog__slider
+  position: relative
+
+  .swiper-container
+    height: px-to-vw(410, 1920)
+
+  .swiper-button-prev,
+  .swiper-button-next
+    position: absolute
+    background-image: none
+    border: none
+    outline: none
+    width: 49px
+    height: 49px
+
+  .swiper-button-prev svg
+    transition: fill 0.3s
+
+  .swiper-button-next svg
+    transition: fill 0.3s
+
+  .swiper-button-prev
+    left: px-to-vw(-69, 1920)
+
+  .swiper-button-next
+    right: px-to-vw(-69, 1920)
+
+  .swiper-button-prev:hover
+
+    svg
+      &:hover
+        fill: #AAAAAA
+
+  .swiper-button-next:hover
+
+    svg
+      &:hover
+         fill: #AAAAAA
 
 .blog__img
   width: 100%
@@ -11,14 +51,16 @@
 
 .blog__wrapper
   position: absolute
-  bottom: -10px
+  bottom: px-to-vw(-26, 1920)
   left: 0
   right: 0
   margin: 0 auto
+  padding-top: px-to-vw(18, 1920)
   width: 85%
   background-color: #ffff
 
 .blog__title
+  color: #000000
   font-family: $font-family-base-extra-bold
   font-size: px-to-vw(18, 1920)
   text-align: center
@@ -29,3 +71,4 @@
   font-size: px-to-vw(14, 1920)
   font-style: italic
   text-align: center
+
