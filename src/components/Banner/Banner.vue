@@ -2,7 +2,7 @@
 
   .banner__content
     .banner__slider
-      swiper( :options="swiperOption" ref="mySwiper" )
+      swiper( :options="swiperOption")
         swiper-slide
           .banner__slide
             .banner__img( :style="{backgroundImage: 'url('+ '../images/Main-slider-img.png' +')'}")
@@ -72,8 +72,6 @@
 <script>
 
   import './index.sass'
-  import { swiper, swiperSlide } from 'vue-awesome-swiper/dist/vue-awesome-swiper.js'
-  import "swiper/dist/css/swiper.css"
 
   export default {
     data() {
@@ -91,9 +89,6 @@
         },
       }
     },
-    components: {
-      swiper, swiperSlide
-    }
   }
 
 </script>

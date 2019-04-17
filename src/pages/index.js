@@ -1,10 +1,13 @@
 import Vue from 'vue';
 import AppVue from './App.vue';
 import VueRouter from 'vue-router';
-
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css';
 import './index.pug';
 import './index.sass';
 
+
+Vue.use(VueAwesomeSwiper);
 Vue.use(VueRouter);
 
 const routes = [

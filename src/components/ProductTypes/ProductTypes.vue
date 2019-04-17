@@ -5,7 +5,7 @@
       .product-types__title product types
       .product-types__subtitle up to 30% discount
       .product-types__slider
-        swiper( :options="swiperOption1").product-types__slide-content
+        swiper( :options="swiperOption").product-types__slide-content
           swiper-slide.product-types__slide
             .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
             a(href="#" onclick="return false").product-types__button shop men
@@ -28,13 +28,11 @@
 <script>
 
   import './index.sass'
-  import { swiper, swiperSlide } from 'vue-awesome-swiper/dist/vue-awesome-swiper.js'
-  import "swiper/dist/css/swiper.css"
 
   export default {
     data() {
       return {
-        swiperOption1: {
+        swiperOption: {
           spaceBetween: 26,
           slidesPerView: 3,
           navigation: {
@@ -45,10 +43,6 @@
         },
       }
     },
-    components: {
-      swiper,
-      swiperSlide
-    }
   }
 
 </script>

@@ -2,7 +2,7 @@
 
   .blog__container
     .blog__slider
-      swiper( :options="swiperOption" ref="mySwiper" ).blog__slide-content
+      swiper( :options="swiperOption").blog__slide-content
         swiper-slide
           a(href="#" onclick="return false").blog__content
             .blog__img( :style="{backgroundImage: 'url(' + '../images/blog-img1.png' + ')'}")
@@ -25,8 +25,6 @@
 <script>
 
   import './index.sass'
-  import { swiper, swiperSlide } from 'vue-awesome-swiper/dist/vue-awesome-swiper.js'
-  import "swiper/dist/css/swiper.css"
 
   export default {
     data() {
@@ -42,10 +40,6 @@
         },
       }
     },
-    components: {
-      swiper,
-      swiperSlide
-    }
   }
 
 </script>
