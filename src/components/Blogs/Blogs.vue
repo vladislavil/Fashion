@@ -1,8 +1,8 @@
 <template lang="pug">
 
-  .container
+  .blog__container
     .blog__slider
-      swiper( :options="swiperOption" ref="mySwiper" )
+      swiper( :options="swiperOption" ref="mySwiper" ).blog__slide-content
         swiper-slide
           a(href="#" onclick="return false").blog__content
             .blog__img( :style="{backgroundImage: 'url(' + '../images/blog-img1.png' + ')'}")
