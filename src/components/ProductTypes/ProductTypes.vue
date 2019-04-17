@@ -1,31 +1,23 @@
 <template lang="pug">
 
-  .container
+  .product-types__container
     .product-types__content
       .product-types__title product types
       .product-types__subtitle up to 30% discount
       .product-types__slider
-        swiper( :options="swiperOption" ref="mySwiper" ).product-types__swiper
-          swiper-slide
-            .product-types__slide
-              .product-types__wrapper
-                .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
-                a(href="#" onclick="return false").product-types__button shop men
-          swiper-slide
-            .product-types__slide
-              .product-types__wrapper
-                .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img2.png' +')'}")
-                a(href="#" onclick="return false").product-types__button shop women
-          swiper-slide
-            .product-types__slide
-              .product-types__wrapper
-                .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img3.png' +')'}")
-                a(href="#" onclick="return false").product-types__button shop kids
-          swiper-slide
-            .product-types__slide
-              .product-types__wrapper
-                .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
-                a(href="#" onclick="return false").product-types__button shop kids
+        swiper( :options="swiperOption1").product-types__slide-content
+          swiper-slide.product-types__slide
+            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
+            a(href="#" onclick="return false").product-types__button shop men
+          swiper-slide.product-types__slide
+            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img2.png' +')'}")
+            a(href="#" onclick="return false").product-types__button shop women
+          swiper-slide.product-types__slide
+            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img3.png' +')'}")
+            a(href="#" onclick="return false").product-types__button shop kids
+          swiper-slide.product-types__slide
+            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
+            a(href="#" onclick="return false").product-types__button shop kids
 
           .swiper-button-prev(slot='button-prev')
             | prev
@@ -42,7 +34,7 @@
   export default {
     data() {
       return {
-        swiperOption: {
+        swiperOption1: {
           spaceBetween: 26,
           slidesPerView: 3,
           navigation: {

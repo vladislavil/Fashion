@@ -15,10 +15,10 @@
             .blog__wrapper
               .blog__title The 15 Secrets About Fashion People
               .blog__subtitle January 13, 2020 by admin
-      .swiper-button-prev(slot='button-prev')
-        include left.svg
-      .swiper-button-next(slot='button-next')
-        include right.svg
+        .swiper-button-prev(slot='button-prev')
+          include left.svg
+        .swiper-button-next(slot='button-next')
+          include right.svg
 
 </template>
 

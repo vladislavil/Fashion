@@ -1,4 +1,12 @@
-.product-types__swiper
+.product-types__container
+  width: calc(75% + 30px)
+  padding: 0 15px
+  margin: 0 auto
+
+.product-types__slide-content
+  width: 81.25%
+  height: px-to-vw(480, 1920)
+  margin: 0 auto
   position: unset
 
 .product-types__title
@@ -12,13 +20,8 @@
   text-align: center
   letter-spacing: 2px
 
-.product-types__slider
-  position: relative
-
-.product-types__wrapper
-  position: relative
-  flex-basis: 100%
-  height: px-to-vw(480, 1920)
+.product-types__slide
+  height: 100%
 
 .product-types__img
   width: 100%
@@ -27,7 +30,9 @@
   background-size: contain
   background-repeat: no-repeat
 
-.product-types__content
+.product-types__slider
+  position: relative
+
   .swiper-button-next,
   .swiper-button-prev
     display: flex
@@ -46,10 +51,10 @@
     transition: background-color 0.3s
 
   .swiper-button-next
-    right: px-to-vw(-168, 1920)
+    right: px-to-vw(-33, 1920)
 
   .swiper-button-prev
-    left: px-to-vw(-168, 1920)
+    left: px-to-vw(-33, 1920)
 
   .swiper-button-next:hover,
   .swiper-button-prev:hover
