@@ -1,5 +1,5 @@
 <template lang="pug">
-
+.offer-banners
   .container
     .offer-banners__content
       .offer-banners__img( :style="{backgroundImage: 'url(' + items[flag].img + ')'}" :class="{'offer-banners__img--left': flag === 1}")

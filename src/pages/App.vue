@@ -1,22 +1,24 @@
 <template lang="pug">
 
   .main__content
-    section.banner
+    section.main__banner
       banner
         template(slot="socials")
           socials
         template(slot="oficial-offer")
           oficial-offer
-    section.product-type
+    section.main__product-type
       product-types
-    section.offer-banners
+    section.main__offer-banners
       offer-banners( :items = "items" :flag = "0")
-    section.offer-banners
+    section.main__offer-banners
       offer-banners( :items = "items" :flag = "1")
-    section.blog
+    section.main__blog
       blog
-    section.nav-panel
+    section.main__nav-panel
       nav-panel( :navItems="navItems" :contactItems="contactItems")
+    section.main__products
+      products( :titles="titles" :productsItems="productsItems")
 
 </template>
 
@@ -28,6 +30,7 @@
   import OfferBanners from '../components/OfferBanners/OfferBanners'
   import Blog from '../components/Blogs/Blogs'
   import NavPanel from '../components/NavPanel/NavPanel'
+  import Products from '../components/Products/Products'
 
   export default {
     components: {
@@ -37,7 +40,8 @@
       ProductTypes,
       OfferBanners,
       Blog,
-      NavPanel
+      NavPanel,
+      Products
     },
     data() {
       return{
@@ -51,6 +55,13 @@
           {title: "your account", text1: "Shipping & returns", text2: "Secure shopping", text3: "Testimonials", text4: "Award winning", text5: "Ethical trading"},
           {title: "loock book", text1: "getting started", text2: "FAQs", text3: "Buying Guide", text4: "Order returns", text5: "Affiliate program"},
         ],
+        productsItems: [
+          {img: "../images/featured-img1.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120"},
+          {img: "../images/featured-img2.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120"},
+          {img: "../images/featured-img3.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120"},
+          {img: "../images/featured-img4.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120"}
+        ],
+        titles: ["All", "spring-summer", "sweatshirt", "gadgets", "outdoor"],
         contactItems: {
           telephone: "0123-456-789", email:"free@psa.in.ua", office: " 245 Yellow House Main Street, London. 456789"}
       }
@@ -61,10 +72,10 @@
 
 <style lang="sass">
 
-  .blog
+  .main__blog
     margin-bottom: -110px
 
-  .nav-panel
+  .main__nav-panel
     background-color: #f8f8f8
 
 </style>

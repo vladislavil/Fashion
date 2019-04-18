@@ -1,5 +1,5 @@
 <template lang="pug">
-
+.nav-panel
   .container
     .nav-panel__content
       .nav-panel__col(v-for="(item, index) in navItems")
@@ -21,13 +21,13 @@
         ul.naw-panel__list
           li.nav-panel__item
             span.nav-panel__strong Teephone: &nbsp;
-            a.nav-panel__link(href="#" onclick="return false") {{contactItems.telephone}}
+            a.nav-panel__link( :href="'tel: ' + contactItems.telephone" ) {{contactItems.telephone}}
           li.nav-panel__item
             span.nav-panel__strong Email: &nbsp;
-            a.nav-panel__link(href="#" onclick="return false") {{contactItems.email}}
+            a.nav-panel__link( :href="'mailto: '+ contactItems.email" ) {{contactItems.email}}
           li.nav-panel__item
             span.nav-panel__strong Head Office: &nbsp;
-            a.nav-panel__link(href="#" onclick="return false") {{contactItems.office}}
+            .nav-panel__link.nav-panel__link--hover {{contactItems.office}}
 
 </template>
 

@@ -1,5 +1,5 @@
 <template lang="pug">
-
+.blog
   .blog__container
     .blog__slider
       swiper( :options="swiperOption").blog__slide-content

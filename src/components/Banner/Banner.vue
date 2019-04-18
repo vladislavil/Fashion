@@ -1,5 +1,5 @@
 <template lang="pug">
-
+.banner
   .banner__content
     .banner__slider
       swiper( :options="swiperOption")

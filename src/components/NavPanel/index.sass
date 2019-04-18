@@ -10,20 +10,29 @@
   text-transform: uppercase
 
 .nav-panel__col
-  width: 18%
-  //margin-right: 65px
+  width: calc((100% - 60px - 23%) / 4)
+  margin-right: px-to-vw(60, 1920)
 
 .nav-panel__col:last-child
-  width: 26%
+  width: 33%
   margin-right: 0
 
 .nav-panel__item
   margin-bottom: 10px
 
 .nav-panel__link
+  display: inline
   color: #727272
   font-size: px-to-vw(14, 1920)
   text-transform: capitalize
+  border-bottom: 1px solid transparent
+  transition: border-color 0.3s
+
+.nav-panel__link:hover
+  border-bottom-color: #727272
+
+.nav-panel__link--hover
+  border: none 
 
 .nav-panel__strong
   font-family: $font-family-base-extra-bold

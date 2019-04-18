@@ -1,5 +1,5 @@
 <template lang="pug">
-
+.product-types
   .product-types__container
     .product-types__content
       .product-types__title product types
