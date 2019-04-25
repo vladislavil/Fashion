@@ -2,65 +2,66 @@
 .products
   .container
     .products__content
-      .products__title featured products
+      .products__title featured products + {{ currentCard }}
       ul.products__list
         li.products__item(v-for="(title, index) in titles" @click="currentCard = index")
           a.products__lnk(href="#" onclick="return false" :class="{active: currentCard === index}") {{ title }}
-      transition
-        .products__cards(v-show="currentCard === 0")
-          .products__card(v-for="item in productsItems")
-            a(href="#" onclick="return false").products__wrapper
-              .products__img-wrapper
-                img.products__img( :src="item.img" )
-              .products__text {{ item.text }}
-              .products__brend {{ item.brend }}
-              .products__prices
-                .products__old-price {{ item.oldPrice }}
-                .products__new-price {{ item.newPrice }}
-      transition
-        .products__cards(v-show="currentCard === 1")
-          .products__card(v-for="item in springSummer")
-            a(href="#" onclick="return false").products__wrapper
-              .products__img-wrapper
-                img.products__img( :src="item.img" )
-              .products__text {{ item.text }}
-              .products__brend {{ item.brend }}
-              .products__prices
-                .products__old-price {{ item.oldPrice }}
-                .products__new-price {{ item.newPrice }}
-      transition
-        .products__cards(v-show="currentCard === 2")
-          .products__card(v-for="item in sweatshirt")
-            a(href="#" onclick="return false").products__wrapper
-              .products__img-wrapper
-                img.products__img( :src="item.img" )
-              .products__text {{ item.text }}
-              .products__brend {{ item.brend }}
-              .products__prices
-                .products__old-price {{ item.oldPrice }}
-                .products__new-price {{ item.newPrice }}
-      transition
-        .products__cards(v-show="currentCard === 3")
-          .products__card(v-for="item in gadgets")
-            a(href="#" onclick="return false").products__wrapper
-              .products__img-wrapper
-                img.products__img( :src="item.img" )
-              .products__text {{ item.text }}
-              .products__brend {{ item.brend }}
-              .products__prices
-                .products__old-price {{ item.oldPrice }}
-                .products__new-price {{ item.newPrice }}
-      transition
-        .products__cards(v-show="currentCard === 4")
-          .products__card(v-for="item in outdoor")
-            a(href="#" onclick="return false").products__wrapper
-              .products__img-wrapper
-                img.products__img( :src="item.img" )
-              .products__text {{ item.text }}
-              .products__brend {{ item.brend }}
-              .products__prices
-                .products__old-price {{ item.oldPrice }}
-                .products__new-price {{ item.newPrice }}
+      .products__content-wrapper
+        transition(name="tab" mode="out-in" )
+          .products__cards(v-show="currentCard === 0")
+            .products__card(v-for="item in productsItems")
+              a(href="#" onclick="return false").products__wrapper
+                .products__img-wrapper
+                  img.products__img( :src="item.img" )
+                .products__text {{ item.text }}
+                .products__brend {{ item.brend }}
+                .products__prices
+                  .products__old-price {{ item.oldPrice }}
+                  .products__new-price {{ item.newPrice }}
+        transition(name="tab" mode="out-in")
+          .products__cards(v-show="currentCard === 1")
+            .products__card(v-for="item in springSummer")
+              a(href="#" onclick="return false").products__wrapper
+                .products__img-wrapper
+                  img.products__img( :src="item.img" )
+                .products__text {{ item.text }}
+                .products__brend {{ item.brend }}
+                .products__prices
+                  .products__old-price {{ item.oldPrice }}
+                  .products__new-price {{ item.newPrice }}
+        transition(name="tab" mode="out-in")
+          .products__cards(v-show="currentCard === 2")
+            .products__card(v-for="item in sweatshirt")
+              a(href="#" onclick="return false").products__wrapper
+                .products__img-wrapper
+                  img.products__img( :src="item.img" )
+                .products__text {{ item.text }}
+                .products__brend {{ item.brend }}
+                .products__prices
+                  .products__old-price {{ item.oldPrice }}
+                  .products__new-price {{ item.newPrice }}
+        transition(name="tab" mode="out-in")
+          .products__cards(v-show="currentCard === 3")
+            .products__card(v-for="item in gadgets")
+              a(href="#" onclick="return false").products__wrapper
+                .products__img-wrapper
+                  img.products__img( :src="item.img" )
+                .products__text {{ item.text }}
+                .products__brend {{ item.brend }}
+                .products__prices
+                  .products__old-price {{ item.oldPrice }}
+                  .products__new-price {{ item.newPrice }}
+        transition(name="tab" mode="out-in")
+          .products__cards(v-show="currentCard === 4")
+            .products__card(v-for="item in outdoor")
+              a(href="#" onclick="return false").products__wrapper
+                .products__img-wrapper
+                  img.products__img( :src="item.img" )
+                .products__text {{ item.text }}
+                .products__brend {{ item.brend }}
+                .products__prices
+                  .products__old-price {{ item.oldPrice }}
+                  .products__new-price {{ item.newPrice }}
 
 
 </template>
@@ -129,10 +130,19 @@
 
 <style lang="sass">
 
-.novisible
-  display: none
-
 .active
   color: red
+
+.tab-enter
+  opacity: 0
+
+.tab-enter-active
+  transition: opacity 1s, transform 1s, height 1s
+
+.tab-leave-to
+  opacity: 0
+
+.tab-leave-active
+  //transition: opacity 1s, transform 1s, height 1s
 
 </style>
