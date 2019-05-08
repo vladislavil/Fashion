@@ -40,8 +40,8 @@
     data() {
       return{
         items: [
-          {title: "WE OFFER BRAND NEW STYLES", subtitle: "SIGN UP NOW AND GET 50% OFF", img: "../images/banner-img.png", text: "see full collection"},
-          {title: "subscribe to our newsletter ", subtitle: "SIGN UP NOW AND GET 75% OFF", img: "../images/banner-img1.jpg", text: "sing up now"}
+          {title: "WE OFFER BRAND NEW STYLES", subtitle: "SIGN UP NOW AND GET 50% OFF", img: "images/banner-img.png", text: "see full collection"},
+          {title: "subscribe to our newsletter ", subtitle: "SIGN UP NOW AND GET 75% OFF", img: "images/banner-img1.jpg", text: "sing up now"}
         ],
         navItems: [
           {title: "information", text1: "the brand", text2: "local stores", text3: "customer service", text4: "privacy & cookies", text5: "site map"},
