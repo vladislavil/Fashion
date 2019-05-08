@@ -33,6 +33,11 @@
 .products__card
   width: calc(25% - 30px)
   margin: 0 15px
+  transition: box-shadow 0.4s, border-radius 0.4s
+
+.products__card:hover
+  box-shadow: 0 0 10px 5px rgba(#000, 0.2)
+  border-radius: 10px
 
 .products__wrapper
   display: block
@@ -66,4 +71,3 @@
 
 .products__prices
   display: flex
-
