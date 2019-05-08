@@ -7,16 +7,16 @@
       .product-types__slider
         swiper( :options="swiperOption").product-types__slide-content
           swiper-slide.product-types__slide
-            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
+            .product-types__img( :style="{backgroundImage: 'url('+ 'images/product-img1.png' +')'}")
             a(href="#" onclick="return false").product-types__button shop men
           swiper-slide.product-types__slide
-            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img2.png' +')'}")
+            .product-types__img( :style="{backgroundImage: 'url('+ 'images/product-img2.png' +')'}")
             a(href="#" onclick="return false").product-types__button shop women
           swiper-slide.product-types__slide
-            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img3.png' +')'}")
+            .product-types__img( :style="{backgroundImage: 'url('+ 'images/product-img3.png' +')'}")
             a(href="#" onclick="return false").product-types__button shop kids
           swiper-slide.product-types__slide
-            .product-types__img( :style="{backgroundImage: 'url('+ '../images/product-img1.png' +')'}")
+            .product-types__img( :style="{backgroundImage: 'url('+ 'images/product-img1.png' +')'}")
             a(href="#" onclick="return false").product-types__button shop kids
 
           .swiper-button-prev(slot='button-prev')
