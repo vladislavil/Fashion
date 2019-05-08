@@ -50,10 +50,10 @@
           {title: "loock book", text1: "getting started", text2: "FAQs", text3: "Buying Guide", text4: "Order returns", text5: "Affiliate program"},
         ],
         productsItems: [
-          {img: "../images/featured-img1.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 1},
-          {img: "../images/featured-img2.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 2},
-          {img: "../images/featured-img3.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 3},
-          {img: "../images/featured-img4.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 4}
+          {img: "images/featured-img1.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 1},
+          {img: "images/featured-img2.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 2},
+          {img: "images/featured-img3.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 3},
+          {img: "images/featured-img4.png", text: "Ted Baker Womens Light", brend: "Gucci", oldPrice: "$700", newPrice: "$120", tab: 4}
         ],
         titles: ["All", "spring-summer", "sweatshirt", "gadgets", "outdoor"],
         contactItems: {
