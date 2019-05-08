@@ -21,7 +21,6 @@
                       include share.svg
                 .banner__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed fermentum nibh, vel aliquet massa. Etiam in magna id risus lacinia luctus eget eu est.
                 a.banner__button shop now
-                slot(name="oficial-offer")
         swiper-slide
           .banner__slide
             .banner__img( :style="{backgroundImage: 'url('+'../images/Main-slider-img.png'+')'}")
@@ -64,7 +63,8 @@
         .swiper-button-next(slot='button-next')
           | next
           include next.svg
-    slot(name="socials")
+    socials
+    oficial-offer
 
 </template>
 
@@ -72,8 +72,14 @@
 <script>
 
   import './index.sass'
+  import Socials from 'components/Socials/Socials'
+  import OficialOffer from 'components/OficialOffer/OficialOffer'
 
   export default {
+    components: {
+      Socials,
+      OficialOffer
+    },
     data() {
       return {
         swiperOption: {

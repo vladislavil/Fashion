@@ -3,28 +3,24 @@
   .main__content
     section.main__banner
       banner
-        template(slot="socials")
-          socials
-        template(slot="oficial-offer")
-          oficial-offer
-    section.main__product-type
-      product-types
+    section.main__products
+      products( :titles="titles" :productsItems="productsItems" )
     section.main__offer-banners
       offer-banners( :items = "items" :flag = "0")
+    section.main__product-type
+      product-types
+    section.main__products
+      products( :titles="titles" :productsItems="productsItems" )
     section.main__offer-banners
       offer-banners( :items = "items" :flag = "1")
     section.main__blog
       blog
     section.main__nav-panel
       nav-panel( :navItems="navItems" :contactItems="contactItems")
-    section.main__products
-      products( :titles="titles" :productsItems="productsItems" )
 
 </template>
 
 <script>
-  import Socials from '../components/Socials/Socials'
-  import OficialOffer from '../components/OficialOffer/OficialOffer'
   import Banner from '../components/Banner/Banner'
   import ProductTypes from '../components/ProductTypes/ProductTypes'
   import OfferBanners from '../components/OfferBanners/OfferBanners'
@@ -34,9 +30,7 @@
 
   export default {
     components: {
-      Socials,
       Banner,
-      OficialOffer,
       ProductTypes,
       OfferBanners,
       Blog,
@@ -72,8 +66,14 @@
 
 <style lang="sass">
 
+  .main__offer-banners
+    margin: 0 0 px-to-vw(60, 1920)
+
+  .main__products
+    padding: 5.20833vw 0
+
   .main__blog
-    margin-bottom: -110px
+    margin-bottom: px-to-vw(-130, 1920)
 
   .main__nav-panel
     background-color: #f8f8f8

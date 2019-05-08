@@ -3,16 +3,32 @@
   padding: 0 15px
   margin: 0 auto
 
+.blog__main-title
+  margin-bottom: px-to-vw(80, 1920)
+  font-family: $font-family-base-extra-bold
+  font-size: px-to-vw(26, 1920)
+  font-weight: $font-weight-semi-bold
+  text-transform: uppercase
+  text-align: center
+
 .blog__slide-content
   position: static
   width: 88%
   margin: 0 auto
   height: px-to-vw(410, 1920)
 
-.blog__content
+.blog__main
   position: relative
   display: block
   height: px-to-vw(380, 1920)
+  transition: opacity 0.3s
+
+.blog__main:hover
+  opacity: 0.7
+
+  .blog__wrapper
+    box-shadow: 0 0 10px rgba(#000, 0.5)
+
 
 .blog__slider
   position: relative
@@ -67,6 +83,7 @@
   padding-top: px-to-vw(18, 1920)
   width: 85%
   background-color: #ffff
+  transition: box-shadow 0.3s
 
 .blog__title
   color: #000000

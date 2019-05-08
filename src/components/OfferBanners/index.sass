@@ -34,6 +34,7 @@
   text-transform: uppercase
 
 .offer-banners__button
+  position: relative
   display: block
   width: 32%
   padding: px-to-vw(20, 1920) 0
@@ -46,4 +47,14 @@
   font-weight: $font-weight-extra-bold
   letter-spacing: 2px
   border-radius: px-to-vw(28, 1920)
+
+
+.offer-banners__button::after
+  content: ""
+  background: #000
+  position: absolute
+  border-bottom: 30px solid rgba(0, 0, 0, 1)
+  border-left: 30px solid transparent
+  border-right: 30px solid transparent
+
 
