@@ -29,11 +29,16 @@
 
   import './index.sass'
 
+  import moment from 'vue-moment'
+
   export default {
     data() {
       return{
 
       }
+    },
+    mounted() {
+      console.log(moment);
     }
   }
 

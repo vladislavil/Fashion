@@ -28,7 +28,6 @@
           li.nav-panel__item
             span.nav-panel__strong Head Office: &nbsp;
             .nav-panel__link.nav-panel__link--hover {{contactItems.office}}
-
 </template>
 
 <script>
