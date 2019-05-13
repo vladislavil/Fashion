@@ -5,7 +5,7 @@
       swiper( :options="swiperOption")
         swiper-slide
           .banner__slide
-            .banner__img( :style="{backgroundImage: 'url('+ 'images/Main-slider-img.png' +')'}")
+            .banner__img( :style="{backgroundImage: 'url('+ 'images/bg1.jpg' +')'}")
               .banner__wrapper
                 .banner__title Summer Collection
                 .banner__subtitle 01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MEN´S WEAR
@@ -23,7 +23,7 @@
                 a.banner__button shop now
         swiper-slide
           .banner__slide
-            .banner__img( :style="{backgroundImage: 'url('+'images/Main-slider-img.png'+')'}")
+            .banner__img( :style="{backgroundImage: 'url('+'images/bg2.jpg'+')'}")
               .banner__wrapper
                 .banner__title Summer Collection
                 .banner__subtitle 02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MEN´S WEAR
@@ -41,7 +41,7 @@
                 a.banner__button shop now
         swiper-slide
           .banner__slide
-            .banner__img( :style="{backgroundImage: 'url('+'images/Main-slider-img.png'+')'}")
+            .banner__img( :style="{backgroundImage: 'url('+'images/bg3.jpg'+')'}")
               .banner__wrapper
                 .banner__title Summer Collection
                 .banner__subtitle 03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MEN´S WEAR
@@ -78,7 +78,7 @@
   export default {
     components: {
       Socials,
-      OficialOffer
+      OficialOffer,
     },
     data() {
       return {
