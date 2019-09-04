@@ -11,6 +11,9 @@
   height: 100%
   padding: 0 54px 0 106px
 
+  +max-w($tablet)
+    position: relative
+
 .header__logo
   margin-right: px-to-vw(218, 1920)
   text-align: center
@@ -83,3 +86,13 @@
 
   &:hover
     fill: #AAAAAA
+
+.header__nav
+
+  +max-w($tablet)
+    position: fixed
+    top: 0
+    right: 0
+    width: 320px
+    transform: translateX(100%)
+    transition: transform 0.5s

@@ -6,6 +6,9 @@
   width: 33.75%
   height: px-to-vw(480, 1920)
 
+  +max-w($tablet)
+    display: none
+
 .oficial-offer__content
   display: flex
   height: 100%
@@ -84,7 +87,7 @@
   width: px-to-vw(90, 1920)
   height: px-to-vw(105, 1920)
   background-color: #ffffff
-  border-radius: 23px
+  border-radius: px-to-vw(23, 1920)
   padding: 4px 0 0
   display: flex
   flex-direction: column

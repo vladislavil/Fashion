@@ -3,6 +3,10 @@
   padding: 0 15px
   margin: 0 auto
 
+
+  +max-w($tablet)
+    width: calc(84% - 15px)
+
 .blog__main-title
   margin-bottom: px-to-vw(80, 1920)
   font-family: $font-family-base-extra-bold
@@ -16,6 +20,9 @@
   width: 88%
   margin: 0 auto
   height: px-to-vw(410, 1920)
+
+  +max-w($tablet)
+    width: 78%
 
 .blog__main
   position: relative
@@ -94,4 +101,3 @@
   font-size: px-to-vw(14, 1920)
   font-style: italic
   text-align: center
-
