@@ -3,6 +3,9 @@
   padding: 0 15px
   margin: 0 auto
 
+  +max-w(1024)
+    width: calc(86.271% + 30px)
+
 
   +max-w($tablet)
     width: calc(84% - 15px)
@@ -42,8 +45,8 @@
     background-image: none
     border: none
     outline: none
-    width: 49px
-    height: 49px
+    width: px-to-vw(49, 1920)
+    height: px-to-vw(49, 1920)
     top: calc(50% - 15px)
 
   .swiper-button-prev svg

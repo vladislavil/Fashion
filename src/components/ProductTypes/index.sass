@@ -3,11 +3,18 @@
   padding: 0 15px
   margin: 0 auto
 
+  +max-w(1024)
+    width: calc(84.6% + 30px)
+
 .product-types__slide-content
   width: 81.25%
   height: px-to-vw(480, 1920)
   margin: 0 auto
   position: static
+
+  +max-w(1024)
+    height: px-to-vw(318, 1024)
+    width: calc(86.3% + 30px)
 
 .product-types__title
   margin-bottom: px-to-vw(20, 1920)
@@ -42,23 +49,24 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 110px
-    height: 43px
+    width: px-to-vw(43, 1920)
+    height: px-to-vw(110, 1920)
     background-image: none
     background-color: #d7d7d7
     outline: none
     border: none
+    writing-mode: vertical-rl
     font-size: px-to-vw(14, 1920)
     text-transform: uppercase
     letter-spacing: 2px
-    transform: rotate(270deg)
+    transform: rotate(180deg)
     transition: background-color 0.3s
 
   .swiper-button-next
-    right: px-to-vw(-33, 1920)
+    right: 0
 
   .swiper-button-prev
-    left: px-to-vw(-33, 1920)
+    left: 0
 
   .swiper-button-next:hover,
   .swiper-button-prev:hover
