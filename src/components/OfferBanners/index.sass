@@ -26,12 +26,19 @@
   text-transform: uppercase
   letter-spacing: 2px
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(18, $laptop_sm)
+
 .offer-banners__subtitle
   margin-bottom: px-to-vw(29, 1920)
   font-size: px-to-vw(14, 1920)
   text-align: center
   letter-spacing: px-to-vw(5, 1920)
   text-transform: uppercase
+
+  +max-w($laptop_md)
+    margin-bottom: px-to-vw(15, $laptop_sm)
+    font-size: px-to-vw(11, $laptop_sm)
 
 .offer-banners__button
   position: relative
@@ -48,6 +55,9 @@
   letter-spacing: 2px
   border-radius: px-to-vw(28, 1920)
   transition: box-shadow 0.4s
+
+  +max-w($laptop_md)
+    font-size: px-to-vw(10, $laptop_sm)
 
 .offer-banners__button:hover
   box-shadow: 0 0 60px inset rgba(255,255,255, 0.5)

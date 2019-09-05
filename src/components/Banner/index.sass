@@ -39,6 +39,9 @@
   font-weight: $font-weight-semi-bold
   letter-spacing: 1px
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(12, $laptop_sm)
+
 .banner__icons
   margin-bottom: px-to-vw(45, 1920)
   display: flex
@@ -68,6 +71,10 @@
   font-size: px-to-vw(14, 1920)
   line-height: (26/14)
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(12, $laptop_sm)
+    line-height: (24/12)
+
 .banner__button
   display: block
   border-radius: 25px
@@ -81,6 +88,9 @@
   text-align: center
   cursor: pointer
   transition: box-shadow 0.4s
+
+  +max-w($laptop_md)
+    font-size: 8px
 
 .banner__button:hover
   box-shadow: 0 0 30px inset rgba(255,255,255, 0.5)
@@ -98,9 +108,13 @@
     font-size: 12px
     font-weight: $font-weight-semi-bold
     text-transform: uppercase
-    line-height: 1
+    line-height: (16/12)
     letter-spacing: 1px
     transition: color 0.3s
+
+    +max-w($laptop_md)
+      line-height: 0.7
+      font-size: 10px
 
   .swiper-button-prev svg
     fill: #ffffff

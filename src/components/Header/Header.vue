@@ -28,6 +28,8 @@
 
 <script>
 
+  import './index.sass'
+
   export default {
     data(){
       return {

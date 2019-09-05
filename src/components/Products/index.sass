@@ -9,6 +9,9 @@
   text-transform: uppercase
   text-align: center
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(18, $laptop_sm)
+
 .products__list
   display: flex
   justify-content: center
@@ -19,6 +22,9 @@
   font-family: $font-family-base-extra-bold
   font-size: px-to-vw(19, 1920)
   font-weight: $font-weight-light
+
+  +max-w($laptop_md)
+    font-size: px-to-vw(16, $laptop_sm)
 
 .products__item
   margin-right: px-to-vw(50, 1920)
@@ -50,6 +56,9 @@
 .products__old-price,
 .products__brend
   font-size: px-to-vw(15, 1920)
+
+  +max-w($laptop_md)
+    font-size: px-to-vw(12, $laptop_sm)
 
 .products__text,
 .products__new-price

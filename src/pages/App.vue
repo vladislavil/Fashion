@@ -1,6 +1,8 @@
 <template lang="pug">
 
   .main__content
+    header.header
+      Header
     section.main__banner
       banner
     section.main__products
@@ -27,9 +29,11 @@
   import Blog from '../components/Blogs/Blogs'
   import NavPanel from '../components/NavPanel/NavPanel'
   import Products from '../components/Products/Products'
+  import Header from '../components/Header/Header'
 
   export default {
     components: {
+      Header,
       Banner,
       ProductTypes,
       OfferBanners,

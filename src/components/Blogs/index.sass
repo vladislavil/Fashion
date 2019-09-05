@@ -6,10 +6,6 @@
   +max-w(1024)
     width: calc(86.271% + 30px)
 
-
-  +max-w($tablet)
-    width: calc(84% - 15px)
-
 .blog__main-title
   margin-bottom: px-to-vw(80, 1920)
   font-family: $font-family-base-extra-bold
@@ -18,14 +14,14 @@
   text-transform: uppercase
   text-align: center
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(18, $laptop_sm)
+
 .blog__slide-content
   position: static
   width: 88%
   margin: 0 auto
   height: px-to-vw(410, 1920)
-
-  +max-w($tablet)
-    width: 78%
 
 .blog__main
   position: relative
@@ -48,6 +44,10 @@
     width: px-to-vw(49, 1920)
     height: px-to-vw(49, 1920)
     top: calc(50% - 15px)
+
+    +max-w($laptop_md)
+      width: px-to-vw(35, $laptop_sm)
+      height: px-to-vw(35, $laptop_sm)
 
   .swiper-button-prev svg
     transition: fill 0.3s
@@ -99,8 +99,15 @@
   text-align: center
   text-transform: uppercase
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(12, $laptop_sm)
+    margin-bottom: 5px
+
 .blog__subtitle
   color: #7d7d7d
   font-size: px-to-vw(14, 1920)
   font-style: italic
   text-align: center
+
+  +max-w($laptop_md)
+    font-size: px-to-vw(10, $laptop_sm)
