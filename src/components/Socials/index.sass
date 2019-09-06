@@ -2,10 +2,13 @@
   position: absolute
   top: 0
   left: 0
-  width: 65px
+  width: px-to-vw(65, 1920)
   height: 100%
   background-color: #ededed
   z-index: 100
+
+  +max-w($laptop_md)
+    width: px-to-vw(50, $laptop_sm)
 
 .socials__content
   display: flex

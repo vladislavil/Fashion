@@ -37,8 +37,16 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
           },
+          breakpoints: {
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 25,
+              navigation: false
+            }
+          },
           loop: true,
         },
+
       }
     },
   }

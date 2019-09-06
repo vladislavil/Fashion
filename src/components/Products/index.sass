@@ -12,6 +12,9 @@
   +max-w($laptop_md)
     font-size: px-to-vw(18, $laptop_sm)
 
+  +max-w($mobile_sm)
+    font-size: px-to-vw(14, $mobile_xs)
+
 .products__list
   display: flex
   justify-content: center
@@ -26,6 +29,9 @@
   +max-w($laptop_md)
     font-size: px-to-vw(16, $laptop_sm)
 
+  +max-w($mobile_sm)
+    font-size: px-to-vw(10, $mobile_xs)
+
 .products__item
   margin-right: px-to-vw(50, 1920)
 
@@ -36,9 +42,28 @@
   display: flex
   margin: 0 -15px
 
+  +max-w($mobile_lg)
+    flex-wrap: wrap
+
+  +max-w($mobile_sm)
+    justify-content: center
+    margin: 0
+
 .products__card
   width: calc(25% - 30px)
   margin: 0 15px
+
+  +max-w($mobile_lg)
+    width: calc(33.33% - 30px)
+    margin-bottom: 15px
+
+  +max-w($mobile_sm)
+    width: calc(50% - 30px)
+
+  +max-w($mobile_xs)
+    width: 100%
+    margin: 0
+    margin-bottom: 15px
 
 .products__wrapper
   display: block
@@ -46,6 +71,9 @@
 
 .products__img-wrapper
   max-width: 272px
+
+  +max-w($mobile_xs)
+    max-width: 100%
 
 .products__img
   width: 100%
@@ -59,6 +87,9 @@
 
   +max-w($laptop_md)
     font-size: px-to-vw(12, $laptop_sm)
+
+  +max-w($mobile_sm)
+    font-size: px-to-vw(10, $mobile_xs)
 
 .products__text,
 .products__new-price

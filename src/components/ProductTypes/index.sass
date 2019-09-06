@@ -16,6 +16,9 @@
     height: px-to-vw(318, 1024)
     width: calc(86.3% + 30px)
 
+  +max-w($mobile_xs)
+    height: px-to-vw(320, $mobile_xs)
+
 .product-types__title
   margin-bottom: px-to-vw(20, 1920)
   font-family: $font-family-base-extra-bold
@@ -24,12 +27,21 @@
   text-transform: uppercase
   text-align: center
 
+  +max-w($laptop_md)
+    font-size: px-to-vw(22, $laptop_sm)
+
+  +max-w($mobile_sm)
+    font-size: px-to-vw(15, $mobile_xs)
+
 .product-types__subtitle
   margin-bottom: px-to-vw(45, 1920)
   font-size: px-to-vw(14, 1920)
   font-weight: bold
   text-align: center
   letter-spacing: 3px
+
+  +max-w($mobile_sm)
+    font-size: px-to-vw(11, $mobile_xs)
 
 .product-types__slide
   height: 100%

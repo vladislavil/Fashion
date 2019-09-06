@@ -6,6 +6,9 @@
   +max-w(1024)
     width: calc(86.271% + 30px)
 
+  +max-w($mobile_md)
+    width: 100%
+
 .blog__main-title
   margin-bottom: px-to-vw(80, 1920)
   font-family: $font-family-base-extra-bold
@@ -17,16 +20,25 @@
   +max-w($laptop_md)
     font-size: px-to-vw(18, $laptop_sm)
 
+  +max-w($mobile_md)
+    font-size: px-to-vw(15, $mobile_sm)
+
 .blog__slide-content
   position: static
   width: 88%
   margin: 0 auto
   height: px-to-vw(410, 1920)
 
+  +max-w($mobile_sm)
+    height: px-to-vw(290, $mobile_sm)
+
+  +max-w($mobile_md)
+    width: 100%
+
 .blog__main
   position: relative
   display: block
-  height: px-to-vw(380, 1920)
+  height: 93%
 
 .blog__main:hover
   .blog__img
@@ -48,6 +60,9 @@
     +max-w($laptop_md)
       width: px-to-vw(35, $laptop_sm)
       height: px-to-vw(35, $laptop_sm)
+
+    +max-w($mobile_md)
+      display: none
 
   .swiper-button-prev svg
     transition: fill 0.3s
@@ -80,6 +95,10 @@
   background-size: cover
   background-position: center
   transition: opacity 0.3s
+
+
+  +max-w($mobile_lg)
+    background-position: top
 
 .blog__wrapper
   position: absolute
